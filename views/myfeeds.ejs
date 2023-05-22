@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/feed.css">
+
+  <title>Akış</title>
+</head>
+<body>
+
+
+    <nav class="feed-header-sign">
+        <div class="main-text">O'SHARE</div>
+        <a href="/feed" class="button-89" role="button" id="main-feed">AKIŞ</a>
+       <div class="action-container">
+       
+        <button class="button-55" role="button" id="myFeedButton">Akıştakilerim</button>
+        <form class="post-form"  action="/logout"  method="POST">
+          <input type="hidden" name="_csrf" value="<%= csrfToken %>">
+        <button class="button-55" role="button" id="logoutButton">Çıkış Yap</button>
+      </form>
+       </div>
+    </nav>
+    
+
+
+    <div class="generalContainer">
+        <div class="profilSection">
+            <div class="profil-photo"></div>
+            <div class="image-section">
+              <form class="post-form"  action="/feed"  method="POST" enctype="multipart/form-data" >
+              <input type="file" name="image" id="image" value=" ">
+              <button  type="submit">Yükle</button>
+                    <input type="hidden" name="_csrf" value="<%= csrfToken %>">
+            </form>
+            </div>
+           
+            <div class="userName"><%= req.user.username.valueOf()  %></div>
+            <div class="bachelor"><%= req.user.bachelor.valueOf()  %></div>
+
+        </div>
+        <div class="main-container"> 
+
+            
+
+                  <% if (comms.length > 0) { %>
+                   
+                         <% for (let comment of comms) { %>
+                       <% if(comment.userId == req.user._id.valueOf()){%>
+                    <form class="myshared-post" action="/delete-product" method="POST" >
+                      <textarea class="post-style" readonly><%= comment.description  %></textarea>
+                      <div class="profil-info-sharedpost"><%= comment.userName %>
+                          <div class="date-info-sharedpost"><%= comment.date  %></div>
+                      </div>
+                      <input type="hidden" value="<%= comment._id %>" name="commentId">
+                      <% if(comment.userId == req.user._id.valueOf()){ %>
+                      <button class="button-6"  id="1" type="submit" >Akışı Sil</button>
+                      <% } %>
+                   
+                      <input type="hidden" name="_csrf" value="<%= csrfToken %>">
+                    </form>
+            
+                  <% }else { %>
+                    <div class="warn">Henüz bir şey akışlamamışsınız!</div>
+
+                <%   } %>
+                  <% }  %>
+                   
+                    <% }  %>
+                 
+           
+                         
+
+                
+               
+                  
+           
+          
+           
+          
+               
+
+        </div>
+    </div>
+   
+
+
+
+</body>
+</html>

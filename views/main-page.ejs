@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>O'SHARE</title>
+</head>
+<body>
+    <nav class="main-header">
+        <div class="main-info">Üniversitenin Paylaşım Ağı!</div>
+    </nav>
+
+        <div class="main-container">
+
+            <div class="logo-container">
+                <img src="images/logo-color.png" alt="logo" class="logo"  height="400">
+                <div class="oshare-info">O'SHARE Okan Üniversitesindeki diğer öğrencilerle iletişim kurmanı sağlar.</div>
+
+
+            </div>
+            <div class="login-form">
+                <% if (errorMessage) { %>
+                    <div class="user-message user-message--error"><%= errorMessage %></div>
+                <% } %>
+                <form class="mail-password" action="/login" method="POST">
+                    <div class="form-control">
+                        <input class="form-input" type="email" name="email" id="email" placeholder="E-Posta">
+                    </div>
+                    <div class="form-control">
+                        <input class="form-input" type="password" name="password" id="password" placeholder="Şifre">
+                    </div>
+                    <button class="button-6" type="submit">Giriş yap</button>
+                    <input type="hidden" name="_csrf" value="<%= csrfToken %>">
+                </form>
+                    <a href="reset" class="reset-password">Şifreni mi unuttun?</a>
+                    <hr>
+                    <a class="button-65" href="signup" type="submit" >Yeni Hesap Oluştur</a>
+            </div>
+        
+        
+
+
+        </div>
+        
+
+    
+</body>
+</html>

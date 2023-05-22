@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <nav class="reset-header-sign">
+        <img src="../images/logo-black.png" alt="logo" class="logo-signup"  height="100">
+    </nav>
+
+    <form class="reset-form" action="/reset" method="POST" novalidate>
+        <% if (errorMessage) { %>
+            <div class="user-message user-message--error"><%= errorMessage %></div>
+        <% } %>
+        <div class="reset-info">E-postana bir mail gelecek.</div>
+        <div class="form-control">
+         
+            <input 
+                class="reset-text"
+                type="email" 
+                name="email" 
+                id="email" 
+                value=""
+                placeholder="E-Posta">
+        </div>
+      
+       
+    
+        <input type="hidden" name="_csrf" value="<%= csrfToken %>">
+        <a href="/reset" class="button-6" type="submit">Şifreyi Sıfırla</a>
+        
+    </form>
+
+    
+</body>
+</html>

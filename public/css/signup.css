@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@1,200&family=Caveat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@1,200&family=Caveat:wght@700&family=Oswald&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+.sign-header-sign{
+    width: 100%;
+    height: 120px;
+    display:flex;
+    
+    align-items: center;
+    border-style: solid;
+    background-color: white;
+}
+
+.logo-feed{
+    position: relative;
+    left: 10px;
+    
+   
+}
+
+.signup-form{
+    position: relative;
+    top: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form-control{
+    margin:5px;
+}
+
+.signup-text{
+    height: 50px;
+    width: 300px;
+    border-style: solid;
+    border-width: 1.5px;
+    border-radius: 3px;
+}
+
+.signup-info{
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+}
+
+/* CSS */
+
+.button-6 {
+    align-items: center;
+    background-color: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: .25rem;
+    box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+    box-sizing: border-box;
+    color: rgba(0, 0, 0, 0.85);
+    cursor: pointer;
+    display: inline-flex;
+    font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    justify-content: center;
+    line-height: 1.25;
+    margin: 2px;
+    min-height: 3rem;
+    padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+    position: relative;
+    text-decoration: none;
+    transition: all 250ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: baseline;
+    width: auto;
+  }
+  
+  .button-6:hover,
+  .button-6:focus {
+    border-color: rgba(0, 0, 0, 0.15);
+    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+    background-color: black;
+    color: white;
+  }
+  
+  .button-6:hover {
+    transform: translateY(-1px);
+  }
+  
+  .button-6:active {
+    background-color: #F0F0F1;
+    border-color: rgba(0, 0, 0, 0.15);
+    box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+    color: rgba(0, 0, 0, 0.65);
+    transform: translateY(0);
+  }
+  

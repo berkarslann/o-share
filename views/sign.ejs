@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/signup.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <nav class="sign-header-sign">
+        <img src="../images/logo-black.png" alt="logo" class="logo-signup"  height="100">
+    </nav>
+
+
+
+    <form class="signup-form" action="/signup" method="POST" novalidate>
+        <div class="signup-info">Kaydol. Kolayca.</div>
+        <div class="form-control">
+         
+            <input class="signup-text" type="user" name="username" id="email" value="" placeholder="Ad">
+        </div>
+        <div class="form-control">
+            <input class="signup-text" type="email" name="email" id="password" value="" placeholder="E-Posta">
+        </div>
+        <div class="form-control">
+            <input class="signup-text"type="password" name="password" id="confirmPassword" value=""placeholder="Şifre">
+        </div>
+        <div class="form-control">
+            <input class="signup-text"type="password" name="confirmpassword" id="confirmPassword" value=""placeholder="Şifreyi doğrulayın">
+        </div>
+
+        <div class="form-control">
+            <input class="signup-text" type="user" name="bachelor" id="password" value="" placeholder="Fakülte">
+        </div>
+
+
+        <input type="hidden" name="_csrf" value="<%= csrfToken %>">
+        <button class="button-6" type="submit">Kayıt Ol</button>
+       
+    </form>
+    
+</body>
+</html>
