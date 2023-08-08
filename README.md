@@ -1,16 +1,23 @@
-<img width="637" alt="Ekran Resmi 2023-05-22 21 19 13" src="https://github.com/berkarslann/o-share/assets/70469925/9f0a1e8d-8df5-48dd-8c68-4e252f871b65">
+<h1 align="center" id="title">O'SHARE</h1>
 
-O'SHARE
+<p align="center"><img src="https://user-images.githubusercontent.com/70469925/239997882-9f0a1e8d-8df5-48dd-8c68-4e252f871b65.png" alt="project-image"></p>
 
-Okan Üniversitesindeki öğrencilere özel bilgi paylaşım sitesi.
+<p id="description">An information sharing site for students at Okan University.</p>
 
+<h2>Project Screenshots:</h2>
 
-<img width="1441" alt="Ekran Resmi 2023-05-22 21 22 28" src="https://github.com/berkarslann/o-share/assets/70469925/7c458996-2e4e-4bfc-b4be-c8aefefbf88e">
+<img src="https://user-images.githubusercontent.com/70469925/239998943-7c458996-2e4e-4bfc-b4be-c8aefefbf88e.png" alt="project-screenshot" width="800" height="400/">
 
-<img width="1459" alt="Ekran Resmi 2023-05-22 21 21 05" src="https://github.com/berkarslann/o-share/assets/70469925/02e71308-c28b-4b04-8920-9f34ba38004e">
-<img width="1441" alt="Ekran Resmi 2023-05-22 21 20 52" src="https://github.com/berkarslann/o-share/assets/70469925/49926cb7-9d8c-4022-bb13-21d39b877d81">
+<img src="https://user-images.githubusercontent.com/70469925/239998976-02e71308-c28b-4b04-8920-9f34ba38004e.png" alt="project-screenshot" width="800" height="400/">
 
+<img src="https://user-images.githubusercontent.com/70469925/239998984-49926cb7-9d8c-4022-bb13-21d39b877d81.png" alt="project-screenshot" width="800" height="400/">
 
-Front-end: HTML/CSS, Vanilla JavaScript
-Back-end: NodeJs 
-Database: MongoDb
+  
+  
+<h2>💻 Built with</h2>
+
+Technologies used in the project:
+
+*   Front-end: HTML&CSS
+*   Back-end: NodeJs
+*   Database: MongoDB
