@@ -1,6 +1,6 @@
 <h1 align="center" id="title">O'SHARE</h1>
 
-<p align="center"><img src="https://user-images.githubusercontent.com/70469925/239997882-9f0a1e8d-8df5-48dd-8c68-4e252f871b65.png" alt="project-image"></p>
+
 
 <p id="description">An information sharing site for students at Okan University.</p>
 
